@@ -1,20 +1,20 @@
 [
   {
     "id": "625b003bd95fbe65ebecd3fb",
-    "balance": "$2,870.57",
-    "picture": "http://placehold.it/32x32",
-    "name": "Burke Saunders"
+    "balance": "$35",
+    "picture": "https://i.ibb.co/DpDBD1D/html.jpg",
+    "name": "HTML full course"
   },
   {
     "id": "625b003b4a2bf2cb5795fe22",
-    "balance": "$2,448.16",
-    "picture": "http://placehold.it/32x32",
-    "name": "Hendrix Mueller"
+    "balance": "$60",
+    "picture": "https://i.ibb.co/wdW56Hf/javascript.jpg",
+    "name": "Javascript full course"
   },
   {
     "id": "625b003b3daf0f9463901ab9",
-    "balance": "$2,213.68",
-    "picture": "http://placehold.it/32x32",
-    "name": "Celina Bennett"
+    "balance": "$95",
+    "picture": "https://i.ibb.co/JQpV1Wd/react.jpg",
+    "name": "React full course"
   }
 ]
