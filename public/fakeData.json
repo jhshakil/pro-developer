@@ -3,18 +3,21 @@
     "id": "625b003bd95fbe65ebecd3fb",
     "balance": "$35",
     "picture": "https://i.ibb.co/DpDBD1D/html.jpg",
-    "name": "HTML full course"
+    "name": "HTML full course",
+    "details": "Some quick example text to build on the card title and make up the bulk of the card's content."
   },
   {
     "id": "625b003b4a2bf2cb5795fe22",
     "balance": "$60",
     "picture": "https://i.ibb.co/wdW56Hf/javascript.jpg",
-    "name": "Javascript full course"
+    "name": "Javascript full course",
+    "details": "Some quick example text to build on the card title and make up the bulk of the card's content."
   },
   {
     "id": "625b003b3daf0f9463901ab9",
     "balance": "$95",
     "picture": "https://i.ibb.co/JQpV1Wd/react.jpg",
-    "name": "React full course"
+    "name": "React full course",
+    "details": "Some quick example text to build on the card title and make up the bulk of the card's content."
   }
 ]

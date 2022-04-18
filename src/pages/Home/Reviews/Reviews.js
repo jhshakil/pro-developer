@@ -1,22 +1,22 @@
 import React, { useEffect, useState } from 'react';
 import { Container, Row } from 'react-bootstrap';
-import Service from '../Service/Service';
+import Review from '../Review/Review';
 
-const Services = () => {
-    const [service, setService] = useState([]);
+const Reviews = () => {
+    const [review, setReview] = useState([]);
     useEffect(() => {
-        fetch('fakeData.json')
+        fetch('fakeReview.json')
             .then(res => res.json())
-            .then(data => setService(data))
+            .then(data => setReview(data))
     }, [])
     return (
         <div className='container'>
-            <h2 className='text-center m-5 fs-1 fw-bold'>Services</h2>
+            <h2 className='text-center m-5 fs-1 fw-bold'>Student Review</h2>
             <div>
                 <Container>
                     <Row className="m-auto">
                         {
-                            service.map(service => <Service key={service.id} service={service}></Service>)
+                            review.map(review => <Review key={review.id} review={review}></Review>)
                         }
                     </Row>
                 </Container>
@@ -25,4 +25,4 @@ const Services = () => {
     );
 };
 
-export default Services;
+export default Reviews;
