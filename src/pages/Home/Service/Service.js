@@ -19,7 +19,7 @@ const Service = ({ service }) => {
                         the card's content.
                     </Card.Text>
                     <Card.Text>Price : {balance}</Card.Text>
-                    <Button onClick={checkoutPage} variant="primary">Go somewhere</Button>
+                    <Button onClick={checkoutPage} variant="primary">Checkout Now</Button>
                 </Card.Body>
                 <Card.Footer>
                     <small className="text-muted">Last updated 3 mins ago</small>

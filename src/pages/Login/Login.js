@@ -1,8 +1,9 @@
 import React, { useRef } from 'react';
 import { Form } from 'react-bootstrap';
-import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import { useSendPasswordResetEmail, useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import auth from '../../firebase.init';
+import SocialLogIn from './SocialLogIn/SocialLogIn';
 
 const Login = () => {
     const emailRef = useRef('');
@@ -10,12 +11,18 @@ const Login = () => {
     let location = useLocation();
 
     let from = location.state?.from?.pathname || "/";
+    const [sendPasswordResetEmail, sending] = useSendPasswordResetEmail(auth);
     const [
         signInWithEmailAndPassword,
         user,
         loading,
         error,
     ] = useSignInWithEmailAndPassword(auth);
+    const resetPassword = async () => {
+        const email = emailRef.current.value;
+        await sendPasswordResetEmail(email);
+        alert('Sent email');
+    }
     const navigate = useNavigate()
     if (user) {
         navigate(from, { replace: true });
@@ -29,7 +36,7 @@ const Login = () => {
     return (
         <div className='container w-50 mt-5 border border-dark p-5'>
             <h3 className='text-center mb-4'>Log In</h3>
-            <button className='w-100 p-2 mb-4'>Login with Google</button>
+            <SocialLogIn></SocialLogIn>
             <Form onSubmit={handleSubmit}>
                 <Form.Group className="mb-3" controlId="formGroupEmail">
                     <Form.Label>Email address</Form.Label>
@@ -41,6 +48,7 @@ const Login = () => {
                 </Form.Group>
                 <input className='w-100 p-2' type="submit" value="Log In" />
             </Form>
+            <p className='m-3 text-center'>Reset Password : <Link className='text-decoration-none' to='/login' onClick={resetPassword}>Reset Password</Link></p>
             <p className='m-3 text-center'>New to Pro Developer : <Link className='text-decoration-none' to='/register'>Create an Account</Link></p>
         </div>
     );
