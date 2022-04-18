@@ -8,7 +8,7 @@ const SocialLogIn = () => {
     const navigate = useNavigate()
     let errorElement;
     if (error) {
-        errorElement = <p className='bg-danger'>Error: {error.message}</p>
+        errorElement = <p>Please Log in</p>
     }
     if (user) {
         navigate('/home')
