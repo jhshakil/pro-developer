@@ -4,20 +4,20 @@
     "balance": "$35",
     "picture": "https://i.ibb.co/DpDBD1D/html.jpg",
     "name": "HTML full course",
-    "details": "Some quick example text to build on the card title and make up the bulk of the card's content."
+    "details": "This is a basic level course for HTML and CSS."
   },
   {
     "id": "625b003b4a2bf2cb5795fe22",
     "balance": "$60",
     "picture": "https://i.ibb.co/wdW56Hf/javascript.jpg",
     "name": "Javascript full course",
-    "details": "Some quick example text to build on the card title and make up the bulk of the card's content."
+    "details": "This is Javascript course. All the content are beginner friendly"
   },
   {
     "id": "625b003b3daf0f9463901ab9",
     "balance": "$95",
     "picture": "https://i.ibb.co/JQpV1Wd/react.jpg",
     "name": "React full course",
-    "details": "Some quick example text to build on the card title and make up the bulk of the card's content."
+    "details": "This is full react course. You will learn also firebase here"
   }
 ]

@@ -1,4 +1,3 @@
-import { FirebaseError } from 'firebase/app';
 import React, { useRef } from 'react';
 import { Form } from 'react-bootstrap';
 import { useSendPasswordResetEmail, useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
@@ -12,11 +11,10 @@ const Login = () => {
     let location = useLocation();
 
     let from = location.state?.from?.pathname || "/";
-    const [sendPasswordResetEmail, sending] = useSendPasswordResetEmail(auth);
+    const [sendPasswordResetEmail] = useSendPasswordResetEmail(auth);
     const [
         signInWithEmailAndPassword,
         user,
-        loading,
         error,
     ] = useSignInWithEmailAndPassword(auth);
 

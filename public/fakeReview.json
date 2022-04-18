@@ -4,20 +4,20 @@
         "rating": "4.5",
         "picture": "https://i.ibb.co/SVq6v79/review2.jpg",
         "name": "Padilla Franklin",
-        "details": "Some quick example text to build on the card title and make up the bulk of the card's content."
+        "details": "Nice course, I love this"
     },
     {
         "id": "625d6945291e82d78c819a07",
         "rating": "5",
         "picture": "https://i.ibb.co/JBjT9W9/review1.jpg",
         "name": "Mason Lester",
-        "details": "Some quick example text to build on the card title and make up the bulk of the card's content."
+        "details": "This is very beginner friendly course."
     },
     {
         "id": "625d6945c841242cb4434062",
         "rating": "4.5",
         "picture": "https://i.ibb.co/47z9gSN/review3.jpg",
         "name": "Diane Silva",
-        "details": "Some quick example text to build on the card title and make up the bulk of the card's content."
+        "details": "Nice course. Video quality is also good"
     }
 ]
