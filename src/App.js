@@ -10,6 +10,8 @@ import Register from './pages/Register/Register'
 import Checkout from './pages/Checkout/Checkout/Checkout';
 import RequireAuth from './pages/Shared/RequireAuth/RequireAuth';
 import Notfound from './pages/Notfound/Notfound';
+import Blogs from './pages/Blogs/Blogs/Blogs';
+import Footer from './pages/Shared/Footer/Footer';
 
 function App() {
   return (
@@ -20,6 +22,7 @@ function App() {
         <Route path='/home' element={<Home></Home>}>Home</Route>
         <Route path='/about' element={<About></About>}>About</Route>
         <Route path='/contact' element={<Contact></Contact>}>Contact</Route>
+        <Route path='/blogs' element={<Blogs></Blogs>}>Blogs</Route>
         <Route path='/orders' element={<Orders></Orders>}>Orders</Route>
         <Route path='/login' element={<Login></Login>}>Log in</Route>
         <Route path='/register' element={<Register></Register>}>Register</Route>
@@ -30,6 +33,7 @@ function App() {
         }></Route>
         <Route path='*' element={<Notfound></Notfound>}>Notfound</Route>
       </Routes>
+      <Footer></Footer>
     </div>
   );
 }
